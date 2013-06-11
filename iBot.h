@@ -2,7 +2,7 @@
 #define IRCBOT_H
 
 #include "Connector.h"
-
+#include "MsgParser.h"
 
 class iBot {
 public:
@@ -10,8 +10,7 @@ public:
     ~iBot();
 
     void    Configure();
-    void    Configure(string host, int port, string channel);
-    int     ConnectToServer(string host, int port, string channel);
+
 private:
     string  name;
     string  password;
