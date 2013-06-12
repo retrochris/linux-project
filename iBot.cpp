@@ -13,7 +13,14 @@ iBot::~iBot() {
     delete connector;
 }
 
-
+void iBot::Configure() {
+    config = new ConfLoader();
+    ConnectToServer(string(config->configData->host), config->configData->port, string(config->configData->channel));
+}
+void iBot::Configure(string host, int port, string channel) {
+    config = new ConfLoader((char*)host.c_str(), port, (char*)channel.c_str());
+    ConnectToServer(host, port, channel);
+}
 int iBot::ConnectToServer(string host, int port, string channel) {
     connector = new Connector(host, port);
     if (!connector->Connect())
