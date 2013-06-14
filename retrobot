@@ -1,0 +1,47 @@
+.TH  "" "" 
+.SS IRC-BOT
+.PP
+retroBot - Eine Anwendung, die sich auf einem IRC-Server anmeldet und
+auf bestimmte Nachrichten reagiert
+.SS SYNOPSIS
+.PP
+\&./main server port channel
+.SS DESCRIPTION
+.IP \[bu] 2
+Dieser Bot verbindet sich mit einem IRC-Server und reagiert auf
+bestimmte Anweisungen.
+.IP \[bu] 2
+Server, Port und Channel werden zum Start als Parameter übergeben.
+.IP \[bu] 2
+Mit dem Nicknamen und dem Passwort wird identifiziert.
+.PP
+Der Bot arbeitet mit folgenden Meldungen:
+.SS OPTIONS
+\[bu] .RS 2
+.SH nick name - Ändern des Botnamen
+.RE
+\[bu] .RS 2
+.SH logging on/off - Loggin ein oder ausschalten
+.RE
+\[bu] .RS 2
+.SH last_seen_user name - um zu sehen wann ein bestimmter User zuletzt
+etwas getan hat
+.RE
+\[bu] .RS 2
+.SH show_chatlog - um den Chatlog anzuzeigen
+.RE
+\[bu] .RS 2
+.SH join channel - um den Bot einen channel beitreten zu lassen
+.RE
+\[bu] .RS 2
+.SH leave channel - um den Bot einen channel verlassen zu lassen
+.RE
+\[bu] .RS 2
+.SH topic channel text - um das Topic in einem channel zu ändern
+.RE
+\[bu] .RS 2
+.SH bye - Bot abmelden
+.RE
+.SS AUTHOR
+.PP
+Christian Rauchholz m1001235.fh-heidelberg.de

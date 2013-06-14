@@ -2,6 +2,7 @@
 #define IRCBOT_H
 
 #include "Connector.h"
+#include "SQLLogging.h"
 #include "MsgParser.h"
 #include "ConfLoader.h"
 
